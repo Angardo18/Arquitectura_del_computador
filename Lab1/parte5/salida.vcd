@@ -1,0 +1,99 @@
+$date
+	Tue Aug 02 20:17:04 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 4 ! out [3:0] $end
+$var wire 1 " c $end
+$var reg 4 # a [3:0] $end
+$var reg 4 $ b [3:0] $end
+$scope module sumador $end
+$var wire 4 % a [3:0] $end
+$var wire 4 & b [3:0] $end
+$var wire 1 " cOut $end
+$var wire 8 ' w [7:0] $end
+$var wire 4 ( p [3:0] $end
+$var wire 4 ) out [3:0] $end
+$var wire 4 * g [3:0] $end
+$var wire 3 + c [3:1] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx +
+bxz *
+bx )
+bx (
+bzxxxxxxx '
+b0 &
+b0 %
+b0 $
+b0 #
+x"
+bx !
+$end
+#3
+bx0 +
+b0z *
+#5
+b0 (
+#6
+bzx0xx0x0 '
+#8
+bzx00x000 '
+#9
+bx00 +
+#10
+bx00 !
+bx00 )
+#11
+bz0000000 '
+#14
+b0 +
+0"
+bx000 !
+bx000 )
+#19
+b0 !
+b0 )
+#100
+b1 $
+b1 &
+b1111 #
+b1111 %
+#103
+b1 +
+#105
+b1110 (
+#108
+bz0000001 '
+#110
+b1100 !
+b1100 )
+#111
+bz0000011 '
+b11 +
+#114
+bz0001011 '
+#116
+b1000 !
+b1000 )
+#117
+bz0011011 '
+b111 +
+#120
+bz1011011 '
+#122
+b0 !
+b0 )
+#123
+1"
