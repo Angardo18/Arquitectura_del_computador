@@ -1,0 +1,7 @@
+INFILE=C:\Users\Administrator\Desktop\lab2_arqui_lopez_orellana\lab2\ProjectOutputs\NB3000XN_05\lab2.ncd
+OUTFILE=C:\Users\Administrator\Desktop\lab2_arqui_lopez_orellana\lab2\ProjectOutputs\NB3000XN_05\lab2.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s1400an-4fgg676
+WORKINGDIR=C:\Users\Administrator\Desktop\lab2_arqui_lopez_orellana\lab2\ProjectOutputs\NB3000XN_05
+LICENSE=WebPack
+USER_INFO=210920543_0_0_277

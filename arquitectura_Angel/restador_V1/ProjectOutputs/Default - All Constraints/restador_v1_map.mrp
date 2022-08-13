@@ -1,0 +1,1031 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'restador_V1'
+
+Design Information
+------------------
+Command Line   : map -p XC3S1400AN-FGG676-4 -pr b -tx off -c 100 -t 1 -u
+-ignore_keep_hierarchy -o restador_v1_map.ncd restador_v1.ngd 
+Target Device  : xc3s1400an
+Target Package : fgg676
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Tue Aug 09 21:28:51 2022
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  102
+Logic Utilization:
+  Number of Slice Flip Flops:           391 out of  22,528    1%
+  Number of 4 input LUTs:               348 out of  22,528    1%
+Logic Distribution:
+  Number of occupied Slices:            271 out of  11,264    2%
+    Number of Slices containing only related logic:     271 out of     271 100%
+    Number of Slices containing unrelated logic:          0 out of     271   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         353 out of  22,528    1%
+    Number used as logic:               348
+    Number used as a route-thru:          5
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  4 out of     502    1%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.05
+
+Peak Memory Usage:  4500 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Map:124 - The command line option -t can only be used when running in
+   timing mode (-timing option).  The option will be ignored.
+WARNING:Map:210 - The -tx switch is not supported for this architecture, and
+   will be ignored.
+WARNING:Pack:266 - The function generator U1/TAP1/n2d_not failed to merge with
+   F5 multiplexer U1/TAP1/i228.  Tried to combine two collections of symbols
+   from different positions within the same layer.  The design will exhibit
+   suboptimal timing.
+WARNING:Pack:266 - The function generator U1/TAP1/n2d_not failed to merge with
+   F5 multiplexer U1/TAP1/i229.  Unable to resolve the conflicts between two or
+   more collections of symbols which have restrictive placement or routing
+   requirements.  The original symbols are:
+   	MUXF5 symbol "U1/TAP1/i229" (Output Signal = U1/TAP1/n242)
+   	LUT symbol "U1/TAP1/n2d_not" (Output Signal = U1/TAP1/n2d_not)
+   	MUXF5 symbol "U1/TAP1/i227" (Output Signal = U1/TAP1/n240)
+   Failure 1:  Unable to combine the following symbols into a single slice.
+   	MUXF5 symbol "U1/TAP1/i229" (Output Signal = U1/TAP1/n242)
+   	MUXF5 symbol "U1/TAP1/i227" (Output Signal = U1/TAP1/n240)
+   	LUT symbol "U1/TAP1/n2d_not" (Output Signal = U1/TAP1/n2d_not)
+   There is more than one F5MUX.
+   Failure 2:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "U1/TAP1/i232" (Output Signal = U1/TAP1/n245)
+   	MUXF5 symbol "U1/TAP1/i230" (Output Signal = U1/TAP1/n243)
+   	MUXF6 symbol "U1/TAP1/i231" (Output Signal = U1/TAP1/n244)
+   	MUXF5 symbol "U1/TAP1/i228" (Output Signal = U1/TAP1/n241)
+   There is more than one MUXF6.
+     The design will exhibit suboptimal timing.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_11> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_10> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_13> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_12> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_21> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_20> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_15> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_14> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_23> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_22> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_31> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_30> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_17> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_16> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_25> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_24> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_19> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_18> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_27> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_26> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_29> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_28> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/TAP1/reset> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_6> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_9> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_8> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_6> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_9> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_8> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_6> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_9> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_8> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/TAP1/exit1dr> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_6> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_9> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_8> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_11> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_10> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_13> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_12> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_21> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_20> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_15> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_14> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_23> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_22> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_31> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_30> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_17> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_16> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_25> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_24> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_19> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_18> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_27> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_26> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_29> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_28> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_11> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_10> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_13> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_12> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_15> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_14> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_11> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_10> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_13> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_12> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_15> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_14> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network U1/TAP1/reset has no load.
+INFO:LIT:395 - The above info message is repeated 97 more times for the
+   following (max. 5 shown):
+   U1/TAP1/exit1dr,
+   U1/RegisterInput_Value/regout_20,
+   U1/RegisterInput_Value/regout_17,
+   U1/RegisterInput_Value/regout_21,
+   U1/RegisterInput_Value/regout_18
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 359 block(s) optimized away
+ 275 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "U1/TRST_not" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n489" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n485" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n481" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n467" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n493" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n477" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n473" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n497" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n501" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n505" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n509" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n513" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n517" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n521" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n525" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n529" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n533" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n537" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n541" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n545" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n549" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n553" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n557" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n561" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n565" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n569" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n573" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n577" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n581" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n585" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n589" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n593" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n597" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n601" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n605" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n609" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n613" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n617" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n621" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n625" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n629" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n633" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n637" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n641" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n645" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n649" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n653" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n657" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n661" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n665" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n669" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n673" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n677" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n681" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n685" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n689" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n693" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n697" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n701" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n705" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n709" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n713" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n717" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n721" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Value/n725" is sourceless and has been removed.
+The signal "U1/TAP1/trst_not" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n258" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n260" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n254" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n256" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n250" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n252" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n236" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n238" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n262" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n264" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n246" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n248" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n242" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n244" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n266" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n268" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n270" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n272" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n274" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n276" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n278" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n280" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n282" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n284" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n286" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n288" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n290" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n292" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n294" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n296" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n298" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n300" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n302" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n304" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n306" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n308" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n310" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n312" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n314" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n316" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n318" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n320" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n322" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n324" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n326" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n328" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n330" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n332" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n334" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n336" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n338" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n340" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n342" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n344" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n346" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n348" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n350" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n352" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n354" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n356" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n358" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n360" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n362" is sourceless and has been removed.
+The signal "U1/RegisterInput_Value/n364" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n258" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n260" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n254" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n256" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n250" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n252" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n236" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n238" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n262" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n264" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n246" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n248" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n242" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n244" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n266" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n268" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n270" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n272" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n274" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n276" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n278" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n280" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n282" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n284" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n286" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n288" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n290" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n292" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n294" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n296" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n298" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n300" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n302" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n304" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n306" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n308" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n310" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n312" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n314" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n316" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n318" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n320" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n322" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n324" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n326" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n328" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n330" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n332" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n334" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n336" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n338" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n340" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n342" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n344" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n346" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n348" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n350" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n352" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n354" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n356" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n358" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n360" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n362" is sourceless and has been removed.
+The signal "U1/RegisterConfiguration/n364" is sourceless and has been removed.
+The signal "U1/control_register/n90" is sourceless and has been removed.
+The signal "U1/control_register/n92" is sourceless and has been removed.
+The signal "U1/control_register/n86" is sourceless and has been removed.
+The signal "U1/control_register/n88" is sourceless and has been removed.
+The signal "U1/control_register/n82" is sourceless and has been removed.
+The signal "U1/control_register/n84" is sourceless and has been removed.
+The signal "U1/control_register/n68" is sourceless and has been removed.
+The signal "U1/control_register/n70" is sourceless and has been removed.
+The signal "U1/control_register/n94" is sourceless and has been removed.
+The signal "U1/control_register/n96" is sourceless and has been removed.
+The signal "U1/control_register/n78" is sourceless and has been removed.
+The signal "U1/control_register/n80" is sourceless and has been removed.
+The signal "U1/control_register/n74" is sourceless and has been removed.
+The signal "U1/control_register/n76" is sourceless and has been removed.
+The signal "U1/control_register/n98" is sourceless and has been removed.
+The signal "U1/control_register/n100" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n146" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n148" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n142" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n144" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n138" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n140" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n124" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n126" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n150" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n152" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n134" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n136" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n130" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n132" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n154" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n156" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n158" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n160" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n162" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n164" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n166" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n168" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n170" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n172" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n174" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n176" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n178" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n180" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n182" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n184" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n186" is sourceless and has been removed.
+The signal "U1/RegisterInput_Length/n188" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n146" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n148" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n142" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n144" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n138" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n140" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n124" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n126" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n150" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n152" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n134" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n136" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n130" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n132" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n154" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n156" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n158" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n160" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n162" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n164" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n166" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n168" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n170" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n172" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n174" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n176" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n178" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n180" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n182" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n184" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n186" is sourceless and has been removed.
+The signal "U1/RegisterOutput_Length/n188" is sourceless and has been removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+AND2 		U1/RegisterConfiguration/n236
+AND2B1 		U1/RegisterConfiguration/n238
+AND2 		U1/RegisterConfiguration/n242
+AND2B1 		U1/RegisterConfiguration/n244
+AND2 		U1/RegisterConfiguration/n246
+AND2B1 		U1/RegisterConfiguration/n248
+AND2 		U1/RegisterConfiguration/n250
+AND2B1 		U1/RegisterConfiguration/n252
+AND2 		U1/RegisterConfiguration/n254
+AND2B1 		U1/RegisterConfiguration/n256
+AND2 		U1/RegisterConfiguration/n258
+AND2B1 		U1/RegisterConfiguration/n260
+AND2 		U1/RegisterConfiguration/n262
+AND2B1 		U1/RegisterConfiguration/n264
+AND2 		U1/RegisterConfiguration/n266
+AND2B1 		U1/RegisterConfiguration/n268
+AND2 		U1/RegisterConfiguration/n270
+AND2B1 		U1/RegisterConfiguration/n272
+AND2 		U1/RegisterConfiguration/n274
+AND2B1 		U1/RegisterConfiguration/n276
+AND2 		U1/RegisterConfiguration/n278
+AND2B1 		U1/RegisterConfiguration/n280
+AND2 		U1/RegisterConfiguration/n282
+AND2B1 		U1/RegisterConfiguration/n284
+AND2 		U1/RegisterConfiguration/n286
+AND2B1 		U1/RegisterConfiguration/n288
+AND2 		U1/RegisterConfiguration/n290
+AND2B1 		U1/RegisterConfiguration/n292
+AND2 		U1/RegisterConfiguration/n294
+AND2B1 		U1/RegisterConfiguration/n296
+AND2 		U1/RegisterConfiguration/n298
+AND2B1 		U1/RegisterConfiguration/n300
+AND2 		U1/RegisterConfiguration/n302
+AND2B1 		U1/RegisterConfiguration/n304
+AND2 		U1/RegisterConfiguration/n306
+AND2B1 		U1/RegisterConfiguration/n308
+AND2 		U1/RegisterConfiguration/n310
+AND2B1 		U1/RegisterConfiguration/n312
+AND2 		U1/RegisterConfiguration/n314
+AND2B1 		U1/RegisterConfiguration/n316
+AND2 		U1/RegisterConfiguration/n318
+AND2B1 		U1/RegisterConfiguration/n320
+AND2 		U1/RegisterConfiguration/n322
+AND2B1 		U1/RegisterConfiguration/n324
+AND2 		U1/RegisterConfiguration/n326
+AND2B1 		U1/RegisterConfiguration/n328
+AND2 		U1/RegisterConfiguration/n330
+AND2B1 		U1/RegisterConfiguration/n332
+AND2 		U1/RegisterConfiguration/n334
+AND2B1 		U1/RegisterConfiguration/n336
+AND2 		U1/RegisterConfiguration/n338
+AND2B1 		U1/RegisterConfiguration/n340
+AND2 		U1/RegisterConfiguration/n342
+AND2B1 		U1/RegisterConfiguration/n344
+AND2 		U1/RegisterConfiguration/n346
+AND2B1 		U1/RegisterConfiguration/n348
+AND2 		U1/RegisterConfiguration/n350
+AND2B1 		U1/RegisterConfiguration/n352
+AND2 		U1/RegisterConfiguration/n354
+AND2B1 		U1/RegisterConfiguration/n356
+AND2 		U1/RegisterConfiguration/n358
+AND2B1 		U1/RegisterConfiguration/n360
+AND2 		U1/RegisterConfiguration/n362
+AND2B1 		U1/RegisterConfiguration/n364
+AND2 		U1/RegisterConfiguration/n6j
+AND2 		U1/RegisterConfiguration/n6l
+AND2 		U1/RegisterConfiguration/n6n
+AND2 		U1/RegisterConfiguration/n6p
+AND2 		U1/RegisterConfiguration/n6r
+AND2 		U1/RegisterConfiguration/n6t
+AND2 		U1/RegisterConfiguration/n6v
+AND2 		U1/RegisterConfiguration/n6x
+AND2 		U1/RegisterConfiguration/n6z
+AND2 		U1/RegisterConfiguration/n7b
+AND2 		U1/RegisterConfiguration/n7d
+AND2 		U1/RegisterConfiguration/n7h
+AND2 		U1/RegisterConfiguration/n7l
+AND2 		U1/RegisterConfiguration/n7n
+AND2 		U1/RegisterConfiguration/n7p
+AND2 		U1/RegisterConfiguration/n7r
+AND2 		U1/RegisterConfiguration/n7t
+AND2 		U1/RegisterConfiguration/n7v
+AND2 		U1/RegisterConfiguration/n7x
+AND2 		U1/RegisterConfiguration/n7z
+AND2 		U1/RegisterConfiguration/n8b
+AND2 		U1/RegisterConfiguration/n8d
+AND2 		U1/RegisterConfiguration/n8f
+AND2 		U1/RegisterConfiguration/n8h
+AND2 		U1/RegisterConfiguration/n8j
+AND2 		U1/RegisterConfiguration/n8l
+AND2 		U1/RegisterConfiguration/n8n
+AND2 		U1/RegisterConfiguration/n8p
+AND2 		U1/RegisterConfiguration/n8r
+AND2 		U1/RegisterConfiguration/n8s
+AND2 		U1/RegisterInput_Length/n124
+AND2B1 		U1/RegisterInput_Length/n126
+AND2 		U1/RegisterInput_Length/n130
+AND2B1 		U1/RegisterInput_Length/n132
+AND2 		U1/RegisterInput_Length/n134
+AND2B1 		U1/RegisterInput_Length/n136
+AND2 		U1/RegisterInput_Length/n138
+AND2B1 		U1/RegisterInput_Length/n140
+AND2 		U1/RegisterInput_Length/n142
+AND2B1 		U1/RegisterInput_Length/n144
+AND2 		U1/RegisterInput_Length/n146
+AND2B1 		U1/RegisterInput_Length/n148
+AND2 		U1/RegisterInput_Length/n150
+AND2B1 		U1/RegisterInput_Length/n152
+AND2 		U1/RegisterInput_Length/n154
+AND2B1 		U1/RegisterInput_Length/n156
+AND2 		U1/RegisterInput_Length/n158
+AND2B1 		U1/RegisterInput_Length/n160
+AND2 		U1/RegisterInput_Length/n162
+AND2B1 		U1/RegisterInput_Length/n164
+AND2 		U1/RegisterInput_Length/n166
+AND2B1 		U1/RegisterInput_Length/n168
+AND2 		U1/RegisterInput_Length/n170
+AND2B1 		U1/RegisterInput_Length/n172
+AND2 		U1/RegisterInput_Length/n174
+AND2B1 		U1/RegisterInput_Length/n176
+AND2 		U1/RegisterInput_Length/n178
+AND2B1 		U1/RegisterInput_Length/n180
+AND2 		U1/RegisterInput_Length/n182
+AND2B1 		U1/RegisterInput_Length/n184
+AND2 		U1/RegisterInput_Length/n186
+AND2B1 		U1/RegisterInput_Length/n188
+AND2 		U1/RegisterInput_Length/n3h
+AND2 		U1/RegisterInput_Length/n3j
+AND2 		U1/RegisterInput_Length/n3l
+AND2 		U1/RegisterInput_Length/n3n
+AND2 		U1/RegisterInput_Length/n3p
+AND2 		U1/RegisterInput_Length/n3r
+AND2 		U1/RegisterInput_Length/n3t
+AND2 		U1/RegisterInput_Length/n3v
+AND2 		U1/RegisterInput_Length/n3x
+AND2 		U1/RegisterInput_Length/n4b
+AND2 		U1/RegisterInput_Length/n4d
+AND2 		U1/RegisterInput_Length/n4f
+AND2 		U1/RegisterInput_Length/n4h
+AND2 		U1/RegisterInput_Length/n4j
+AND2 		U1/RegisterInput_Length/n4k
+AND2 		U1/RegisterInput_Value/n236
+AND2B1 		U1/RegisterInput_Value/n238
+AND2 		U1/RegisterInput_Value/n242
+AND2B1 		U1/RegisterInput_Value/n244
+AND2 		U1/RegisterInput_Value/n246
+AND2B1 		U1/RegisterInput_Value/n248
+AND2 		U1/RegisterInput_Value/n250
+AND2B1 		U1/RegisterInput_Value/n252
+AND2 		U1/RegisterInput_Value/n254
+AND2B1 		U1/RegisterInput_Value/n256
+AND2 		U1/RegisterInput_Value/n258
+AND2B1 		U1/RegisterInput_Value/n260
+AND2 		U1/RegisterInput_Value/n262
+AND2B1 		U1/RegisterInput_Value/n264
+AND2 		U1/RegisterInput_Value/n266
+AND2B1 		U1/RegisterInput_Value/n268
+AND2 		U1/RegisterInput_Value/n270
+AND2B1 		U1/RegisterInput_Value/n272
+AND2 		U1/RegisterInput_Value/n274
+AND2B1 		U1/RegisterInput_Value/n276
+AND2 		U1/RegisterInput_Value/n278
+AND2B1 		U1/RegisterInput_Value/n280
+AND2 		U1/RegisterInput_Value/n282
+AND2B1 		U1/RegisterInput_Value/n284
+AND2 		U1/RegisterInput_Value/n286
+AND2B1 		U1/RegisterInput_Value/n288
+AND2 		U1/RegisterInput_Value/n290
+AND2B1 		U1/RegisterInput_Value/n292
+AND2 		U1/RegisterInput_Value/n294
+AND2B1 		U1/RegisterInput_Value/n296
+AND2 		U1/RegisterInput_Value/n298
+AND2B1 		U1/RegisterInput_Value/n300
+AND2 		U1/RegisterInput_Value/n302
+AND2B1 		U1/RegisterInput_Value/n304
+AND2 		U1/RegisterInput_Value/n306
+AND2B1 		U1/RegisterInput_Value/n308
+AND2 		U1/RegisterInput_Value/n310
+AND2B1 		U1/RegisterInput_Value/n312
+AND2 		U1/RegisterInput_Value/n314
+AND2B1 		U1/RegisterInput_Value/n316
+AND2 		U1/RegisterInput_Value/n318
+AND2B1 		U1/RegisterInput_Value/n320
+AND2 		U1/RegisterInput_Value/n322
+AND2B1 		U1/RegisterInput_Value/n324
+AND2 		U1/RegisterInput_Value/n326
+AND2B1 		U1/RegisterInput_Value/n328
+AND2 		U1/RegisterInput_Value/n330
+AND2B1 		U1/RegisterInput_Value/n332
+AND2 		U1/RegisterInput_Value/n334
+AND2B1 		U1/RegisterInput_Value/n336
+AND2 		U1/RegisterInput_Value/n338
+AND2B1 		U1/RegisterInput_Value/n340
+AND2 		U1/RegisterInput_Value/n342
+AND2B1 		U1/RegisterInput_Value/n344
+AND2 		U1/RegisterInput_Value/n346
+AND2B1 		U1/RegisterInput_Value/n348
+AND2 		U1/RegisterInput_Value/n350
+AND2B1 		U1/RegisterInput_Value/n352
+AND2 		U1/RegisterInput_Value/n354
+AND2B1 		U1/RegisterInput_Value/n356
+AND2 		U1/RegisterInput_Value/n358
+AND2B1 		U1/RegisterInput_Value/n360
+AND2 		U1/RegisterInput_Value/n362
+AND2B1 		U1/RegisterInput_Value/n364
+AND2 		U1/RegisterOutput_Length/n124
+AND2B1 		U1/RegisterOutput_Length/n126
+AND2 		U1/RegisterOutput_Length/n130
+AND2B1 		U1/RegisterOutput_Length/n132
+AND2 		U1/RegisterOutput_Length/n134
+AND2B1 		U1/RegisterOutput_Length/n136
+AND2 		U1/RegisterOutput_Length/n138
+AND2B1 		U1/RegisterOutput_Length/n140
+AND2 		U1/RegisterOutput_Length/n142
+AND2B1 		U1/RegisterOutput_Length/n144
+AND2 		U1/RegisterOutput_Length/n146
+AND2B1 		U1/RegisterOutput_Length/n148
+AND2 		U1/RegisterOutput_Length/n150
+AND2B1 		U1/RegisterOutput_Length/n152
+AND2 		U1/RegisterOutput_Length/n154
+AND2B1 		U1/RegisterOutput_Length/n156
+AND2 		U1/RegisterOutput_Length/n158
+AND2B1 		U1/RegisterOutput_Length/n160
+AND2 		U1/RegisterOutput_Length/n162
+AND2B1 		U1/RegisterOutput_Length/n164
+AND2 		U1/RegisterOutput_Length/n166
+AND2B1 		U1/RegisterOutput_Length/n168
+AND2 		U1/RegisterOutput_Length/n170
+AND2B1 		U1/RegisterOutput_Length/n172
+AND2 		U1/RegisterOutput_Length/n174
+AND2B1 		U1/RegisterOutput_Length/n176
+AND2 		U1/RegisterOutput_Length/n178
+AND2B1 		U1/RegisterOutput_Length/n180
+AND2 		U1/RegisterOutput_Length/n182
+AND2B1 		U1/RegisterOutput_Length/n184
+AND2 		U1/RegisterOutput_Length/n186
+AND2B1 		U1/RegisterOutput_Length/n188
+AND2 		U1/RegisterOutput_Length/n3h
+AND2 		U1/RegisterOutput_Length/n3j
+AND2 		U1/RegisterOutput_Length/n3l
+AND2 		U1/RegisterOutput_Length/n3n
+AND2 		U1/RegisterOutput_Length/n3p
+AND2 		U1/RegisterOutput_Length/n3r
+AND2 		U1/RegisterOutput_Length/n3t
+AND2 		U1/RegisterOutput_Length/n3v
+AND2 		U1/RegisterOutput_Length/n3z
+AND2 		U1/RegisterOutput_Length/n4b
+AND2 		U1/RegisterOutput_Length/n4d
+AND2 		U1/RegisterOutput_Length/n4f
+AND2 		U1/RegisterOutput_Length/n4h
+AND2 		U1/RegisterOutput_Length/n4k
+AND2 		U1/RegisterOutput_Value/n467
+AND2 		U1/RegisterOutput_Value/n473
+AND2 		U1/RegisterOutput_Value/n477
+AND2 		U1/RegisterOutput_Value/n481
+AND2 		U1/RegisterOutput_Value/n485
+AND2 		U1/RegisterOutput_Value/n489
+AND2 		U1/RegisterOutput_Value/n493
+AND2 		U1/RegisterOutput_Value/n497
+AND2 		U1/RegisterOutput_Value/n501
+AND2 		U1/RegisterOutput_Value/n505
+AND2 		U1/RegisterOutput_Value/n509
+AND2 		U1/RegisterOutput_Value/n513
+AND2 		U1/RegisterOutput_Value/n517
+AND2 		U1/RegisterOutput_Value/n521
+AND2 		U1/RegisterOutput_Value/n525
+AND2 		U1/RegisterOutput_Value/n529
+AND2 		U1/RegisterOutput_Value/n533
+AND2 		U1/RegisterOutput_Value/n537
+AND2 		U1/RegisterOutput_Value/n541
+AND2 		U1/RegisterOutput_Value/n545
+AND2 		U1/RegisterOutput_Value/n549
+AND2 		U1/RegisterOutput_Value/n553
+AND2 		U1/RegisterOutput_Value/n557
+AND2 		U1/RegisterOutput_Value/n561
+AND2 		U1/RegisterOutput_Value/n565
+AND2 		U1/RegisterOutput_Value/n569
+AND2 		U1/RegisterOutput_Value/n573
+AND2 		U1/RegisterOutput_Value/n577
+AND2 		U1/RegisterOutput_Value/n581
+AND2 		U1/RegisterOutput_Value/n585
+AND2 		U1/RegisterOutput_Value/n589
+AND2 		U1/RegisterOutput_Value/n593
+AND2 		U1/RegisterOutput_Value/n597
+AND2 		U1/RegisterOutput_Value/n601
+AND2 		U1/RegisterOutput_Value/n605
+AND2 		U1/RegisterOutput_Value/n609
+AND2 		U1/RegisterOutput_Value/n613
+AND2 		U1/RegisterOutput_Value/n617
+AND2 		U1/RegisterOutput_Value/n621
+AND2 		U1/RegisterOutput_Value/n625
+AND2 		U1/RegisterOutput_Value/n629
+AND2 		U1/RegisterOutput_Value/n633
+AND2 		U1/RegisterOutput_Value/n637
+AND2 		U1/RegisterOutput_Value/n641
+AND2 		U1/RegisterOutput_Value/n645
+AND2 		U1/RegisterOutput_Value/n649
+AND2 		U1/RegisterOutput_Value/n653
+AND2 		U1/RegisterOutput_Value/n657
+AND2 		U1/RegisterOutput_Value/n661
+AND2 		U1/RegisterOutput_Value/n665
+AND2 		U1/RegisterOutput_Value/n669
+AND2 		U1/RegisterOutput_Value/n673
+AND2 		U1/RegisterOutput_Value/n677
+AND2 		U1/RegisterOutput_Value/n681
+AND2 		U1/RegisterOutput_Value/n685
+AND2 		U1/RegisterOutput_Value/n689
+AND2 		U1/RegisterOutput_Value/n693
+AND2 		U1/RegisterOutput_Value/n697
+AND2 		U1/RegisterOutput_Value/n701
+AND2 		U1/RegisterOutput_Value/n705
+AND2 		U1/RegisterOutput_Value/n709
+AND2 		U1/RegisterOutput_Value/n713
+AND2 		U1/RegisterOutput_Value/n717
+AND2 		U1/RegisterOutput_Value/n721
+AND2 		U1/RegisterOutput_Value/n725
+AND2 		U1/TAP1/id_reg_unit/n1k
+AND2 		U1/TAP1/id_reg_unit/n1q
+AND2 		U1/TAP1/id_reg_unit/n1s
+AND2 		U1/TAP1/id_reg_unit/n2a
+AND2 		U1/TAP1/id_reg_unit/n2c
+AND2 		U1/TAP1/id_reg_unit/n2e
+AND2 		U1/TAP1/id_reg_unit/n2i
+AND2 		U1/TAP1/id_reg_unit/n2k
+AND2 		U1/TAP1/id_reg_unit/n2o
+AND2 		U1/TAP1/id_reg_unit/n2s
+AND2 		U1/TAP1/id_reg_unit/n2y
+AND2 		U1/TAP1/id_reg_unit/n3a
+AND2 		U1/TAP1/id_reg_unit/n3c
+AND2 		U1/TAP1/id_reg_unit/n3e
+AND2 		U1/TAP1/id_reg_unit/n3g
+AND2 		U1/TAP1/id_reg_unit/n3i
+AND2 		U1/TAP1/id_reg_unit/n3k
+AND2 		U1/TAP1/id_reg_unit/n3m
+AND2 		U1/TAP1/id_reg_unit/n3o
+AND2 		U1/TAP1/id_reg_unit/n3s
+AND2 		U1/TAP1/id_reg_unit/n3u
+VCC 		U1/TAP1/n4b
+INV 		U1/TAP1/trst_not
+INV 		U1/TRST_not
+AND2B1 		U1/control_register/n100
+AND2 		U1/control_register/n68
+AND2B1 		U1/control_register/n70
+AND2 		U1/control_register/n74
+AND2B1 		U1/control_register/n76
+AND2 		U1/control_register/n78
+AND2B1 		U1/control_register/n80
+AND2 		U1/control_register/n82
+AND2B1 		U1/control_register/n84
+AND2 		U1/control_register/n86
+AND2B1 		U1/control_register/n88
+AND2 		U1/control_register/n90
+AND2B1 		U1/control_register/n92
+AND2 		U1/control_register/n94
+AND2B1 		U1/control_register/n96
+AND2 		U1/control_register/n98
+GND 		U1/n23u
+VCC 		U1/n23v
+VCC 		n1l
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| JTAG_NEXUS_TCK                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| JTAG_NEXUS_TDI                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| JTAG_NEXUS_TDO                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| JTAG_NEXUS_TMS                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

@@ -1,0 +1,183 @@
+###############################################################################
+### Altium HDL Synthesizer 1.1.0.1
+### Copyright (C) 2005-2009, Altium Limited. All Rights Reserved
+###############################################################################
+### Timestamp: 8/9/2022 9:28:45 PM
+###############################################################################
+### Commandline: AltiumSynthesizer.exe "-o" "restador_V1.mof" "-p" "restador_V1.mpf"
+###
+### Options:
+###
+### Synthesizing restador_V1 for Spartan3AN
+### Entity                  : restador_V1
+### VerilogMode             : 1 (0=Verilog95, 1=Verilog2001, 2=VerilogSystem, 3=Ams)
+### VHDL87                  : False
+### Insert Toplevel Buffers : True
+### Combinational Logic Opt : 3 (1=Low, 3=Normal, 5=High)
+###############################################################################
+### Compilation Report
+###############################################################################
+
+##N|The default vhdl library search path is now "C:/Users/Public/Documents/Altium/AD14/Library/VHDL/VHDL93"
+Analyzing VHDL file C:\Users\Administrator\Desktop\arquitectura_Angel\restador_V1\ProjectOutputs\Default - All Constraints\Configurable_U1.VHD
+Restoring VHDL parse-tree ieee.std_logic_1164 from C:/Users/Public/Documents/Altium/AD14/Library/VHDL/VHDL93/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from C:/Users/Public/Documents/Altium/AD14/Library/VHDL/VHDL93/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from C:/Users/Public/Documents/Altium/AD14/Library/VHDL/VHDL93/ieee/std_logic_unsigned.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from C:/Users/Public/Documents/Altium/AD14/Library/VHDL/VHDL93/ieee/std_logic_arith.vdb
+##N|Configurable_U1.VHD|6|analyzing package configurable_u1tap_utils
+##N|Configurable_U1.VHD|71|analyzing package body configurable_u1tap_utils
+##N|Configurable_U1.VHD|82|analyzing entity configurable_u1universal_digital_io_drnoout
+##N|Configurable_U1.VHD|98|analyzing architecture rtl
+##N|Configurable_U1.VHD|134|analyzing entity configurable_u1universal_digital_io_tapcontroller
+##N|Configurable_U1.VHD|168|analyzing architecture rtl
+##N|Configurable_U1.VHD|558|analyzing entity configurable_u1universal_digital_io_datareg_inout_wr
+##N|Configurable_U1.VHD|580|analyzing architecture rtl
+##N|Configurable_U1.VHD|640|analyzing entity configurable_u1
+##N|Configurable_U1.VHD|660|analyzing architecture rtl
+Analyzing Verilog file C:\Users\Administrator\Desktop\arquitectura_Angel\restador_V1\sumador_restador.v
+Analyzing VHDL file C:\Users\Administrator\Desktop\arquitectura_Angel\restador_V1\ProjectOutputs\Default - All Constraints\Sheet2.VHD
+##N|Sheet2.VHD|16|analyzing entity restador_v1
+##N|Sheet2.VHD|30|analyzing architecture structure
+###############################################################################
+### Elaboration Report
+###############################################################################
+
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DRNOOUT(RTL)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_TAPCONTROLLER(rtl)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DRNOOUT(32)(RTL)
+##N|Configurable_U1.VHD|278|others clause is never selected
+##I|Configurable_U1.VHD|279|-- possible Multiplexer: 16-1 for tapstate_nxt
+##N|Configurable_U1.VHD|298|others clause is never selected
+##I|Configurable_U1.VHD|299|-- possible Multiplexer: 16-1 for tapstate_nxt
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(RTL)
+executing Configurable_U1(RTL)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(8)(RTL)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(16)(RTL)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(32)(RTL)
+executing Configurable_U1UNIVERSAL_DIGITAL_IO_DATAREG_INOUT_WR(65)(RTL)
+##I|Configurable_U1.VHD|938|-- found Adder: 4+4
+executing restador_V1(Structure)
+Restoring VHDL parse-tree vl.vl_types from C:/Users/Public/Documents/Altium/AD14/Library/VHDL/VHDL93/vl/vl_types.vdb
+##N|Sheet2.VHD|77|going to verilog side to elaborate module sumador_resta
+##N|sumador_restador.v|4|compiling module sumador_resta
+##N|sumador_restador.v|79|compiling module mux
+##N|sumador_restador.v|101|compiling module Ripple32bit
+##N|sumador_restador.v|90|compiling module Full_adder
+##N|Sheet2.VHD|77|back to vhdl to continue elaboration
+
+###############################################################################
+### Synthesis Report
+###############################################################################
+
+##O|sumador_restador.v|42|Dissolving instance m1(mux)
+##O|sumador_restador.v|43|Dissolving instance m2(mux)
+##O|sumador_restador.v|44|Dissolving instance m3(mux)
+##O|sumador_restador.v|45|Dissolving instance m4(mux)
+##O|sumador_restador.v|46|Dissolving instance m5(mux)
+##O|sumador_restador.v|47|Dissolving instance m6(mux)
+##O|sumador_restador.v|48|Dissolving instance m7(mux)
+##O|sumador_restador.v|49|Dissolving instance m8(mux)
+##O|sumador_restador.v|50|Dissolving instance m9(mux)
+##O|sumador_restador.v|51|Dissolving instance m10(mux)
+##O|sumador_restador.v|52|Dissolving instance m11(mux)
+##O|sumador_restador.v|53|Dissolving instance m12(mux)
+##O|sumador_restador.v|54|Dissolving instance m13(mux)
+##O|sumador_restador.v|55|Dissolving instance m14(mux)
+##O|sumador_restador.v|56|Dissolving instance m15(mux)
+##O|sumador_restador.v|57|Dissolving instance m16(mux)
+##O|sumador_restador.v|58|Dissolving instance m17(mux)
+##O|sumador_restador.v|59|Dissolving instance m18(mux)
+##O|sumador_restador.v|60|Dissolving instance m19(mux)
+##O|sumador_restador.v|61|Dissolving instance m20(mux)
+##O|sumador_restador.v|62|Dissolving instance m21(mux)
+##O|sumador_restador.v|63|Dissolving instance m22(mux)
+##O|sumador_restador.v|64|Dissolving instance m23(mux)
+##O|sumador_restador.v|65|Dissolving instance m24(mux)
+##O|sumador_restador.v|66|Dissolving instance m25(mux)
+##O|sumador_restador.v|67|Dissolving instance m26(mux)
+##O|sumador_restador.v|68|Dissolving instance m27(mux)
+##O|sumador_restador.v|69|Dissolving instance m28(mux)
+##O|sumador_restador.v|70|Dissolving instance m29(mux)
+##O|sumador_restador.v|71|Dissolving instance m30(mux)
+##O|sumador_restador.v|72|Dissolving instance m31(mux)
+##O|sumador_restador.v|73|Dissolving instance m32(mux)
+##O|sumador_restador.v|104|Dissolving instance fa0(Full_adder)
+##O|sumador_restador.v|105|Dissolving instance fa1(Full_adder)
+##O|sumador_restador.v|106|Dissolving instance fa2(Full_adder)
+##O|sumador_restador.v|107|Dissolving instance fa3(Full_adder)
+##O|sumador_restador.v|108|Dissolving instance fa4(Full_adder)
+##O|sumador_restador.v|109|Dissolving instance fa5(Full_adder)
+##O|sumador_restador.v|110|Dissolving instance fa6(Full_adder)
+##O|sumador_restador.v|111|Dissolving instance fa7(Full_adder)
+##O|sumador_restador.v|112|Dissolving instance fa8(Full_adder)
+##O|sumador_restador.v|113|Dissolving instance fa9(Full_adder)
+##O|sumador_restador.v|114|Dissolving instance fa10(Full_adder)
+##O|sumador_restador.v|115|Dissolving instance fa11(Full_adder)
+##O|sumador_restador.v|116|Dissolving instance fa12(Full_adder)
+##O|sumador_restador.v|117|Dissolving instance fa13(Full_adder)
+##O|sumador_restador.v|118|Dissolving instance fa14(Full_adder)
+##O|sumador_restador.v|119|Dissolving instance fa15(Full_adder)
+##O|sumador_restador.v|120|Dissolving instance fa16(Full_adder)
+##O|sumador_restador.v|121|Dissolving instance fa17(Full_adder)
+##O|sumador_restador.v|122|Dissolving instance fa18(Full_adder)
+##O|sumador_restador.v|123|Dissolving instance fa19(Full_adder)
+##O|sumador_restador.v|124|Dissolving instance fa20(Full_adder)
+##O|sumador_restador.v|125|Dissolving instance fa21(Full_adder)
+##O|sumador_restador.v|126|Dissolving instance fa22(Full_adder)
+##O|sumador_restador.v|127|Dissolving instance fa23(Full_adder)
+##O|sumador_restador.v|128|Dissolving instance fa24(Full_adder)
+##O|sumador_restador.v|129|Dissolving instance fa25(Full_adder)
+##O|sumador_restador.v|130|Dissolving instance fa26(Full_adder)
+##O|sumador_restador.v|131|Dissolving instance fa27(Full_adder)
+##O|sumador_restador.v|132|Dissolving instance fa28(Full_adder)
+##O|sumador_restador.v|133|Dissolving instance fa29(Full_adder)
+##O|sumador_restador.v|134|Dissolving instance fa30(Full_adder)
+##O|sumador_restador.v|135|Dissolving instance fa31(Full_adder)
+##O|sumador_restador.v|76|Dissolving instance add(Ripple32bit)
+##O|Sheet2.VHD|70|Dissolving instance U_sumador_resta(sumador_resta)
+###############################################################################
+### Optimization Report
+###  command: mmHDLtoEDIF -f xilinx -n spartan3an -p spartan3 -z 3 -o "C:\Users\Administrator\Desktop\arquitectura_Angel\restador_V1\ProjectOutputs\Default - All Constraints\restador_V1.edf" -b "C:\Users\Administrator\Desktop\arquitectura_Angel\restador_V1\ProjectOutputs\Default - All Constraints\restador_V1.bfl" -e restador_V1 -L "C:\Users\Public\Documents\Altium\AD14\Library/" 
+
+INFO LibDir:  "C:\Users\Public\Documents\Altium\AD14\Library/"
+
+INFO ConstraintsMap:  "C:\Users\Public\Documents\Altium\AD14\Library/vhdl_lib/VendorConstraints.map"
+
+optimizing "_blf/cell0001"
+optimizing "_blf/cell0002"
+optimizing "_blf/cell0003"
+optimizing "_blf/cell0004"
+optimizing "_blf/cell0005"
+optimizing "_blf/cell0006"
+optimizing "_blf/cell0007"
+optimizing "_blf/cell0008"
+ 
+###############################################################################
+### Design Statistics
+###############################################################################
+ 
+Flipflops:                                                 : 391
+    Flipflops with RESET                    (Asynchronous) : 3
+    Flipflops with PRESET                   (Asynchronous) : 4
+    Flipflops with RESET and ENABLE         (Synchronous)  : 7
+    Flipflops with PRESET and ENABLE        (Asynchronous) : 2
+    Flipflops with PRESET, RESET and ENABLE (Asynchronous) : 169
+    Flipflops with ENABLE                                  : 206
+                                                           
+MacroCells:                                                
+    XORCY                                                  : 3
+    MUXCY                                                  : 2
+    MUXF5                                                  : 4
+    MUXF6                                                  : 2
+                                                           
+Area Estimates:                                            
+    Area Estimate (2 Input Gate Count)                     : 1266
+    Area Estimate (LUT Count)                              : 748
+ 
+###############################################################################
+ 
+formating EDIF....                            
+
+###############################################################################
+Synthesis successful
+###############################################################################

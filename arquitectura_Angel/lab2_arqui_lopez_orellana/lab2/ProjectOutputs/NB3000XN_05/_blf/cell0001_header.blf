@@ -1,0 +1,5 @@
+.model lab2
+.inputs JTAG_NEXUS_TCK
+.inputs JTAG_NEXUS_TDI
+.outputs JTAG_NEXUS_TDO
+.inputs JTAG_NEXUS_TMS
