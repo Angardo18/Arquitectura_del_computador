@@ -1,0 +1,417 @@
+.model Configurable_U1UNIVERSAL_DIGITAL_IO_TAPCONTROLLER
+.inputs tck
+.inputs tms
+.inputs tdi
+.inputs drsin
+.inputs trst
+.outputs tdo
+.outputs reset
+.outputs State_TLR
+.outputs controlen
+.outputs updateir
+.outputs dataen
+.outputs shiftdr
+.outputs clockdr
+.outputs updatedr
+.outputs exit1dr
+.outputs irout<3>
+.outputs irout<2>
+.outputs irout<1>
+.outputs irout<0>
+.outputs tapstate<3>
+.outputs tapstate<2>
+.outputs tapstate<1>
+.outputs tapstate<0>
+.inputs id_code_signal<31>
+.inputs id_code_signal<30>
+.inputs id_code_signal<29>
+.inputs id_code_signal<28>
+.inputs id_code_signal<27>
+.inputs id_code_signal<26>
+.inputs id_code_signal<25>
+.inputs id_code_signal<24>
+.inputs id_code_signal<23>
+.inputs id_code_signal<22>
+.inputs id_code_signal<21>
+.inputs id_code_signal<20>
+.inputs id_code_signal<19>
+.inputs id_code_signal<18>
+.inputs id_code_signal<17>
+.inputs id_code_signal<16>
+.inputs id_code_signal<15>
+.inputs id_code_signal<14>
+.inputs id_code_signal<13>
+.inputs id_code_signal<12>
+.inputs id_code_signal<11>
+.inputs id_code_signal<10>
+.inputs id_code_signal<9>
+.inputs id_code_signal<8>
+.inputs id_code_signal<7>
+.inputs id_code_signal<6>
+.inputs id_code_signal<5>
+.inputs id_code_signal<4>
+.inputs id_code_signal<3>
+.inputs id_code_signal<2>
+.inputs id_code_signal<1>
+.inputs id_code_signal<0>
+.names n1
+.names n2
+1
+.loc Configurable_U1.VHD 235
+.subckt Configurable_U1UNIVERSAL_DIGITAL_IO_DRNOOUT_32_ id_reg_unit clk=-id_reg_unit/clk si=-id_reg_unit/si inpvalue<31>=-id_reg_unit/inpvalue<31> inpvalue<30>=-id_reg_unit/inpvalue<30> inpvalue<29>=-id_reg_unit/inpvalue<29> inpvalue<28>=-id_reg_unit/inpvalue<28> inpvalue<27>=-id_reg_unit/inpvalue<27> inpvalue<26>=-id_reg_unit/inpvalue<26> inpvalue<25>=-id_reg_unit/inpvalue<25> inpvalue<24>=-id_reg_unit/inpvalue<24> inpvalue<23>=-id_reg_unit/inpvalue<23> inpvalue<22>=-id_reg_unit/inpvalue<22> inpvalue<21>=-id_reg_unit/inpvalue<21> inpvalue<20>=-id_reg_unit/inpvalue<20> inpvalue<19>=-id_reg_unit/inpvalue<19> inpvalue<18>=-id_reg_unit/inpvalue<18> inpvalue<17>=-id_reg_unit/inpvalue<17> inpvalue<16>=-id_reg_unit/inpvalue<16> inpvalue<15>=-id_reg_unit/inpvalue<15> inpvalue<14>=-id_reg_unit/inpvalue<14> inpvalue<13>=-id_reg_unit/inpvalue<13> inpvalue<12>=-id_reg_unit/inpvalue<12> inpvalue<11>=-id_reg_unit/inpvalue<11> inpvalue<10>=-id_reg_unit/inpvalue<10> inpvalue<9>=-id_reg_unit/inpvalue<9> inpvalue<8>=-id_reg_unit/inpvalue<8> inpvalue<7>=-id_reg_unit/inpvalue<7> inpvalue<6>=-id_reg_unit/inpvalue<6> inpvalue<5>=-id_reg_unit/inpvalue<5> inpvalue<4>=-id_reg_unit/inpvalue<4> inpvalue<3>=-id_reg_unit/inpvalue<3> inpvalue<2>=-id_reg_unit/inpvalue<2> inpvalue<1>=-id_reg_unit/inpvalue<1> inpvalue<0>=-id_reg_unit/inpvalue<0> shiftdr=-id_reg_unit/shiftdr enable=-id_reg_unit/enable so=+idout
+.names tck id_reg_unit/clk
+1 1
+.names tdi id_reg_unit/si
+1 1
+.names id_code_signal<31> id_reg_unit/inpvalue<31>
+1 1
+.names id_code_signal<30> id_reg_unit/inpvalue<30>
+1 1
+.names id_code_signal<29> id_reg_unit/inpvalue<29>
+1 1
+.names id_code_signal<28> id_reg_unit/inpvalue<28>
+1 1
+.names id_code_signal<27> id_reg_unit/inpvalue<27>
+1 1
+.names id_code_signal<26> id_reg_unit/inpvalue<26>
+1 1
+.names id_code_signal<25> id_reg_unit/inpvalue<25>
+1 1
+.names id_code_signal<24> id_reg_unit/inpvalue<24>
+1 1
+.names id_code_signal<23> id_reg_unit/inpvalue<23>
+1 1
+.names id_code_signal<22> id_reg_unit/inpvalue<22>
+1 1
+.names id_code_signal<21> id_reg_unit/inpvalue<21>
+1 1
+.names id_code_signal<20> id_reg_unit/inpvalue<20>
+1 1
+.names id_code_signal<19> id_reg_unit/inpvalue<19>
+1 1
+.names id_code_signal<18> id_reg_unit/inpvalue<18>
+1 1
+.names id_code_signal<17> id_reg_unit/inpvalue<17>
+1 1
+.names id_code_signal<16> id_reg_unit/inpvalue<16>
+1 1
+.names id_code_signal<15> id_reg_unit/inpvalue<15>
+1 1
+.names id_code_signal<14> id_reg_unit/inpvalue<14>
+1 1
+.names id_code_signal<13> id_reg_unit/inpvalue<13>
+1 1
+.names id_code_signal<12> id_reg_unit/inpvalue<12>
+1 1
+.names id_code_signal<11> id_reg_unit/inpvalue<11>
+1 1
+.names id_code_signal<10> id_reg_unit/inpvalue<10>
+1 1
+.names id_code_signal<9> id_reg_unit/inpvalue<9>
+1 1
+.names id_code_signal<8> id_reg_unit/inpvalue<8>
+1 1
+.names id_code_signal<7> id_reg_unit/inpvalue<7>
+1 1
+.names id_code_signal<6> id_reg_unit/inpvalue<6>
+1 1
+.names id_code_signal<5> id_reg_unit/inpvalue<5>
+1 1
+.names id_code_signal<4> id_reg_unit/inpvalue<4>
+1 1
+.names id_code_signal<3> id_reg_unit/inpvalue<3>
+1 1
+.names id_code_signal<2> id_reg_unit/inpvalue<2>
+1 1
+.names id_code_signal<1> id_reg_unit/inpvalue<1>
+1 1
+.names id_code_signal<0> id_reg_unit/inpvalue<0>
+1 1
+.names shiftdr id_reg_unit/shiftdr
+1 1
+.names idenable id_reg_unit/enable
+1 1
+.names tapstate<3> tapstate<2> tapstate<1> tapstate<0> Mux_9/muxtemp0
+1111 1
+1110 1
+1011 1
+1010 1
+1001 1
+1000 1
+0100 1
+.names Mux_9/muxtemp0 n47
+1 1
+.names tapstate<2> tapstate<1> tapstate<0> Mux_10/muxtemp0
+111 1
+101 1
+100 1
+001 1
+000 1
+.names Mux_10/muxtemp0 n48
+1 1
+.names tapstate<3> tapstate<2> tapstate<1> tapstate<0> Mux_11/muxtemp0
+1111 1
+1101 1
+1100 1
+0101 1
+0100 1
+.names Mux_11/muxtemp0 n49
+1 1
+.names tapstate<3> tapstate<2> tapstate<1> Mux_13/muxtemp0
+111 1
+110 1
+101 1
+100 1
+010 1
+.names Mux_13/muxtemp0 n51
+1 1
+.names tapstate<2> tapstate<1> tapstate<0> Mux_14/muxtemp0
+111 1
+101 1
+100 1
+.names Mux_14/muxtemp0 n52
+1 1
+.names tapstate<3> tapstate<2> tapstate<1> tapstate<0> Mux_15/muxtemp0
+1110 1
+1011 1
+1010 1
+1001 1
+1000 1
+0111 1
+0110 1
+0100 1
+0011 1
+0010 1
+0001 1
+0000 1
+.names Mux_15/muxtemp0 n53
+1 1
+.names reduce_nor_208/n1 updatedr
+0 1
+.names n47 tms n51 tapstate_nxt<3>
+11- 1
+-01 1
+.names n48 tms n52 tapstate_nxt<2>
+11- 1
+-01 1
+.names n49 tms n53 tapstate_nxt<1>
+11- 1
+-01 1
+.names n50 tms n54 tapstate_nxt<0>
+11- 1
+-01 1
+.loc Configurable_U1.VHD 469 sh_ireg<2>
+.latch n133 sh_ireg<2> re tck 2 clockir
+.loc Configurable_U1.VHD 315 tapstate<1>
+.latch tapstate_nxt<1> tapstate<1> re tck 5 n101
+.loc Configurable_U1.VHD 315 tapstate<0>
+.latch tapstate_nxt<0> tapstate<0> re tck 5 n101
+.loc Configurable_U1.VHD 405 reset_r
+.latch State_TLR reset_r re n102 4 n101
+.loc Configurable_U1.VHD 405 shiftir_r
+.latch shiftir_c shiftir_r re n102 4 n101
+.names n225 tapstate<3> reduce_nor_208/n1
+1- 1
+-1 1
+.loc Configurable_U1.VHD 486 irout<3>
+.latch sh_ireg<3> irout<3> re tck 4 n144 updateir
+.names n225 n88 reduce_nor_209/n1
+1- 1
+-1 1
+.names tapstate<1> n85 reduce_nor_210/n1
+1- 1
+-1 1
+.loc Configurable_U1.VHD 486 irout<1>
+.latch sh_ireg<1> irout<1> re tck 4 n144 updateir
+.loc Configurable_U1.VHD 486 irout<2>
+.latch sh_ireg<2> irout<2> re tck 4 n144 updateir
+.names n88 tapstate<1> n75
+11 1
+.names n75 n85 clockdr
+11 1
+.loc Configurable_U1.VHD 315 tapstate<2>
+.latch tapstate_nxt<2> tapstate<2> re tck 5 n101
+.names tapstate<3> tapstate<1> n79
+11 1
+.names n79 n85 clockir
+11 1
+.loc Configurable_U1.VHD 469 irso
+.latch n135 irso re tck 2 clockir
+.names n85 n87 n219
+1- 1
+-1 1
+.names n243 tapstate<3> n242 n50
+11- 1
+-01 1
+.names tapstate<0> n85
+0 1
+.names tapstate<1> n86
+0 1
+.names n219 n221 State_TLR
+1- 1
+-1 1
+.names tapstate<3> n88
+0 1
+.names n221 reduce_nor_212/n1 shiftir_c
+1- 1
+-1 1
+.subckt MUXF6 i233 I0=-i233/I0 I1=-i233/I1 S=-i233/S O=+n243
+.names n240 i233/I0
+1 1
+.names n241 i233/I1
+1 1
+.names tapstate<2> i233/S
+1 1
+.names tapstate<0> tapstate<2> reduce_nor_212/n1
+1- 1
+-1 1
+.loc Configurable_U1.VHD 469 sh_ireg<3>
+.latch n132 sh_ireg<3> re tck 2 clockir
+.names n227 n86 shiftdr_c
+1- 1
+-1 1
+.subckt MUXF6 i232 I0=-i232/I0 I1=-i232/I1 S=-i232/S O=+n242
+.names n238 i232/I0
+1 1
+.names n239 i232/I1
+1 1
+.names tapstate<2> i232/S
+1 1
+.loc Configurable_U1.VHD 486 irout<0>
+.latch irso irout<0> re tck 5 n144 updateir
+.names n226 n120 reset
+1- 1
+-1 1
+.names n224 reduce_nor_210/n1 reduce_nor_210/n2
+1- 1
+-1 1
+.names reduce_nor_210/n2 exit1dr
+0 1
+.names trst n101
+0 1
+.names tck n102
+0 1
+.loc Configurable_U1.VHD 405 shiftdr
+.latch shiftdr_c shiftdr re n102 4 n101
+.names tdi n253 n162
+11 1
+.names n228 controlen
+0 1
+.subckt MUXF5 i231 I0=-i231/I0 I1=-i231/I1 S=-i231/S O=+n241
+.names n2 i231/I0
+1 1
+.names n2 i231/I1
+1 1
+.names tapstate<1> i231/S
+1 1
+.names irout<1> irout<3> reduce_nor_215/n1
+1- 1
+-1 1
+.names sh_ireg<1> shiftir_r n135
+1- 1
+-1 1
+.names irout<0> n116
+0 1
+.names n121 n116 reduce_nor_216/n1
+1- 1
+-1 1
+.names n220 reduce_nor_216/n1 reduce_nor_216/n2
+1- 1
+-1 1
+.names irout<1> n120
+0 1
+.names irout<2> n121
+0 1
+.names irout<3> n122
+0 1
+.names reduce_nor_217/n1 dataen
+0 1
+.names reduce_nor_215/n2 idenable
+0 1
+.names n222 reduce_nor_215/n1 reduce_nor_215/n2
+1- 1
+-1 1
+.names n220 n223 reduce_nor_217/n1
+1- 1
+-1 1
+.loc Configurable_U1.VHD 545 byp_reg
+.latch n162 byp_reg re tck 2 clockdr
+.names n219 tapstate<1> n225
+1- 1
+-1 1
+.names tdi n131 n132
+11 1
+.names shiftir_r n131
+0 1
+.names sh_ireg<3> n131 n133
+11 1
+.names sh_ireg<2> n131 n134
+11 1
+.names shiftdr n253
+0 1
+.subckt MUXF5 i230 I0=-i230/I0 I1=-i230/I1 S=-i230/S O=+n240
+.names n2 i230/I0
+1 1
+.names n85 i230/I1
+1 1
+.names tapstate<1> i230/S
+1 1
+.names n122 n120 n220
+1- 1
+-1 1
+.names n88 n86 n221
+1- 1
+-1 1
+.names n223 irout<3> n226
+1- 1
+-1 1
+.names irout<2> n116 n222
+1- 1
+-1 1
+.names n220 n222 n228
+1- 1
+-1 1
+.subckt MUXF5 i229 I0=-i229/I0 I1=-i229/I1 S=-i229/S O=+n239
+.names n2 i229/I0
+1 1
+.names n85 i229/I1
+1 1
+.names tapstate<1> i229/S
+1 1
+.names n224 tapstate<0> n227
+1- 1
+-1 1
+.names reset_r n144
+0 1
+.names reduce_nor_209/n1 updateir
+0 1
+.names irout<0> irout<2> n223
+1- 1
+-1 1
+.names tapstate<2> tapstate<3> n224
+1- 1
+-1 1
+.names tapstate<2> n87
+0 1
+.names tapstate<0> n87 n54
+11 1
+.loc Configurable_U1.VHD 315 tapstate<3>
+.latch tapstate_nxt<3> tapstate<3> re tck 5 n101
+.names irso tapstate<3> drso tdo
+11- 1
+-01 1
+.names idout idenable drsin n159
+11- 1
+-01 1
+.names n159 reduce_nor_216/n2 byp_reg drso
+11- 1
+-01 1
+.subckt MUXF5 i228 I0=-i228/I0 I1=-i228/I1 S=-i228/S O=+n238
+.names n2 i228/I0
+1 1
+.names n85 i228/I1
+1 1
+.names tapstate<1> i228/S
+1 1
+.loc Configurable_U1.VHD 469 sh_ireg<1>
+.latch n134 sh_ireg<1> re tck 2 clockir

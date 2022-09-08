@@ -1,0 +1,350 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'FPGA_Project'
+
+Design Information
+------------------
+Command Line   : map -p XC3S1400AN-FGG676-4 -pr b -tx off -c 100 -t 1 -u
+-ignore_keep_hierarchy -o fpga_project_map.ncd fpga_project.ngd 
+Target Device  : xc3s1400an
+Target Package : fgg676
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Fri Sep 02 18:58:35 2022
+
+WARNING:Map:124 - The command line option -t can only be used when running in
+   timing mode (-timing option).  The option will be ignored.
+WARNING:Map:210 - The -tx switch is not supported for this architecture, and
+   will be ignored.
+Mapping design into LUTs...
+Writing file fpga_project_map.ngm...
+Running directed packing...
+WARNING:Pack:266 - The function generator U1/TAP1/n2d_not failed to merge with
+   F5 multiplexer U1/TAP1/i228.  Unable to resolve the conflicts between two or
+   more collections of symbols which have restrictive placement or routing
+   requirements.  The original symbols are:
+   	MUXF5 symbol "U1/TAP1/i228" (Output Signal = U1/TAP1/n238)
+   	LUT symbol "U1/TAP1/n2d_not" (Output Signal = U1/TAP1/n2d_not)
+   	MUXF5 symbol "U1/TAP1/i230" (Output Signal = U1/TAP1/n240)
+   Failure 1:  Unable to combine the following symbols into a single slice.
+   	MUXF5 symbol "U1/TAP1/i228" (Output Signal = U1/TAP1/n238)
+   	MUXF5 symbol "U1/TAP1/i230" (Output Signal = U1/TAP1/n240)
+   	LUT symbol "U1/TAP1/n2d_not" (Output Signal = U1/TAP1/n2d_not)
+   There is more than one F5MUX.
+   Failure 2:  Unable to combine the following symbols into a single slice.
+   	MUXF6 symbol "U1/TAP1/i232" (Output Signal = U1/TAP1/n242)
+   	MUXF5 symbol "U1/TAP1/i229" (Output Signal = U1/TAP1/n239)
+   	MUXF6 symbol "U1/TAP1/i233" (Output Signal = U1/TAP1/n243)
+   	MUXF5 symbol "U1/TAP1/i231" (Output Signal = U1/TAP1/n241)
+   There is more than one MUXF6.
+     The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator U1/TAP1/n2d_not failed to merge with
+   F5 multiplexer U1/TAP1/i229.  Tried to combine two collections of symbols
+   from different layers.  The alignment requirements of the two layers
+   conflict.  The design will exhibit suboptimal timing.
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+Writing design file "fpga_project_map.ncd"...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c9 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c1 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c4 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c5 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c3 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c7 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c8 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c6 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c10 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c0 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net U2/U_FREQ/clk_div_c2 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U2/U_FREQ/divisor_9_0_component_c8/u1_s is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   U2/U_FREQ/divisor_25_0_component_c9/u1_s is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net n6c is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal <U2/TDO_ENABLE> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_11> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_10> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_13> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_12> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_21> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_20> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_15> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_14> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_23> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_22> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_31> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_30> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_17> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_16> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_25> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_24> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_33> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_32> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_19> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_18> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_27> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_26> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_35> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_34> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_29> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_28> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_36> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/TAP1/reset> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_6> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_9> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_8> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_6> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_9> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Value/regout_8> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_6> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_9> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_8> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/TAP1/exit1dr> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_1> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_0> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_3> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_2> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_5> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_4> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_7> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_6> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_9> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_8> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_11> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_10> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_13> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_12> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_21> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_20> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_15> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_14> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_23> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_22> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_31> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_30> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_17> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_16> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_25> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_24> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_19> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_18> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_27> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_26> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_29> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterConfiguration/regout_28> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_11> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_10> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_13> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_12> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_15> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterOutput_Length/regout_14> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_11> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_10> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_13> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_12> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_15> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <U1/RegisterInput_Length/regout_14> is
+   incomplete. The signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:  122
+Logic Utilization:
+  Number of Slice Flip Flops:           599 out of  22,528    2%
+  Number of 4 input LUTs:               538 out of  22,528    2%
+Logic Distribution:
+  Number of occupied Slices:            417 out of  11,264    3%
+    Number of Slices containing only related logic:     417 out of     417 100%
+    Number of Slices containing unrelated logic:          0 out of     417   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         543 out of  22,528    2%
+    Number used as logic:               538
+    Number used as a route-thru:          5
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  5 out of     502    1%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.12
+
+Peak Memory Usage:  4503 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "fpga_project_map.mrp" for details.

@@ -1,0 +1,6 @@
+.model FPGA_Project
+.inputs CLK_BRD
+.inputs JTAG_NEXUS_TCK
+.inputs JTAG_NEXUS_TDI
+.outputs JTAG_NEXUS_TDO
+.inputs JTAG_NEXUS_TMS

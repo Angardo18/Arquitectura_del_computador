@@ -1,0 +1,5 @@
+.model dFlipFlop
+.inputs d
+.inputs clock
+.inputs reset
+.outputs out

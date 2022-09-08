@@ -1,0 +1,116 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Fri Sep 02 18:58:58 2022
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 104 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   U1/RegisterConfiguration/regout_0
+   U1/RegisterConfiguration/regout_1
+   U1/RegisterConfiguration/regout_10
+   U1/RegisterConfiguration/regout_11
+   U1/RegisterConfiguration/regout_12
+   U1/RegisterConfiguration/regout_13
+   U1/RegisterConfiguration/regout_14
+   U1/RegisterConfiguration/regout_15
+   U1/RegisterConfiguration/regout_16
+   U1/RegisterConfiguration/regout_17
+   U1/RegisterConfiguration/regout_18
+   U1/RegisterConfiguration/regout_19
+   U1/RegisterConfiguration/regout_2
+   U1/RegisterConfiguration/regout_20
+   U1/RegisterConfiguration/regout_21
+   U1/RegisterConfiguration/regout_22
+   U1/RegisterConfiguration/regout_23
+   U1/RegisterConfiguration/regout_24
+   U1/RegisterConfiguration/regout_25
+   U1/RegisterConfiguration/regout_26
+   U1/RegisterConfiguration/regout_27
+   U1/RegisterConfiguration/regout_28
+   U1/RegisterConfiguration/regout_29
+   U1/RegisterConfiguration/regout_3
+   U1/RegisterConfiguration/regout_30
+   U1/RegisterConfiguration/regout_31
+   U1/RegisterConfiguration/regout_4
+   U1/RegisterConfiguration/regout_5
+   U1/RegisterConfiguration/regout_6
+   U1/RegisterConfiguration/regout_7
+   U1/RegisterConfiguration/regout_8
+   U1/RegisterConfiguration/regout_9
+   U1/RegisterInput_Length/regout_0
+   U1/RegisterInput_Length/regout_1
+   U1/RegisterInput_Length/regout_10
+   U1/RegisterInput_Length/regout_11
+   U1/RegisterInput_Length/regout_12
+   U1/RegisterInput_Length/regout_13
+   U1/RegisterInput_Length/regout_14
+   U1/RegisterInput_Length/regout_15
+   U1/RegisterInput_Length/regout_2
+   U1/RegisterInput_Length/regout_3
+   U1/RegisterInput_Length/regout_4
+   U1/RegisterInput_Length/regout_5
+   U1/RegisterInput_Length/regout_6
+   U1/RegisterInput_Length/regout_7
+   U1/RegisterInput_Length/regout_8
+   U1/RegisterInput_Length/regout_9
+   U1/RegisterInput_Value/regout_0
+   U1/RegisterInput_Value/regout_1
+   U1/RegisterInput_Value/regout_10
+   U1/RegisterInput_Value/regout_11
+   U1/RegisterInput_Value/regout_12
+   U1/RegisterInput_Value/regout_13
+   U1/RegisterInput_Value/regout_14
+   U1/RegisterInput_Value/regout_15
+   U1/RegisterInput_Value/regout_16
+   U1/RegisterInput_Value/regout_17
+   U1/RegisterInput_Value/regout_18
+   U1/RegisterInput_Value/regout_19
+   U1/RegisterInput_Value/regout_2
+   U1/RegisterInput_Value/regout_20
+   U1/RegisterInput_Value/regout_21
+   U1/RegisterInput_Value/regout_22
+   U1/RegisterInput_Value/regout_23
+   U1/RegisterInput_Value/regout_24
+   U1/RegisterInput_Value/regout_25
+   U1/RegisterInput_Value/regout_26
+   U1/RegisterInput_Value/regout_27
+   U1/RegisterInput_Value/regout_28
+   U1/RegisterInput_Value/regout_29
+   U1/RegisterInput_Value/regout_3
+   U1/RegisterInput_Value/regout_30
+   U1/RegisterInput_Value/regout_31
+   U1/RegisterInput_Value/regout_32
+   U1/RegisterInput_Value/regout_33
+   U1/RegisterInput_Value/regout_34
+   U1/RegisterInput_Value/regout_35
+   U1/RegisterInput_Value/regout_36
+   U1/RegisterInput_Value/regout_4
+   U1/RegisterInput_Value/regout_5
+   U1/RegisterInput_Value/regout_6
+   U1/RegisterInput_Value/regout_7
+   U1/RegisterInput_Value/regout_8
+   U1/RegisterInput_Value/regout_9
+   U1/RegisterOutput_Length/regout_0
+   U1/RegisterOutput_Length/regout_1
+   U1/RegisterOutput_Length/regout_10
+   U1/RegisterOutput_Length/regout_11
+   U1/RegisterOutput_Length/regout_12
+   U1/RegisterOutput_Length/regout_13
+   U1/RegisterOutput_Length/regout_14
+   U1/RegisterOutput_Length/regout_15
+   U1/RegisterOutput_Length/regout_2
+   U1/RegisterOutput_Length/regout_3
+   U1/RegisterOutput_Length/regout_4
+   U1/RegisterOutput_Length/regout_5
+   U1/RegisterOutput_Length/regout_6
+   U1/RegisterOutput_Length/regout_7
+   U1/RegisterOutput_Length/regout_8
+   U1/RegisterOutput_Length/regout_9
+   U1/TAP1/exit1dr
+   U1/TAP1/reset
+   U2/TDO_ENABLE
+
+

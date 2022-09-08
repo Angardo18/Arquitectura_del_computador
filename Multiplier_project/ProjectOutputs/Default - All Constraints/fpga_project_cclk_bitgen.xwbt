@@ -1,0 +1,7 @@
+INFILE=C:\Users\Administrator\Desktop\arquitectura_Angel\FPGA_Project\ProjectOutputs\Default - All Constraints\fpga_project.ncd
+OUTFILE=C:\Users\Administrator\Desktop\arquitectura_Angel\FPGA_Project\ProjectOutputs\Default - All Constraints\fpga_project_cclk.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s1400an-4fgg676
+WORKINGDIR=C:\Users\Administrator\Desktop\arquitectura_Angel\FPGA_Project\ProjectOutputs\Default - All Constraints
+LICENSE=WebPack
+USER_INFO=210920543_0_0_277

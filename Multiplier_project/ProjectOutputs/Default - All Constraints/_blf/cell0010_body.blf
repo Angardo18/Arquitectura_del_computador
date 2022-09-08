@@ -1,0 +1,10 @@
+.model dFlipFlop
+.inputs d
+.inputs clock
+.inputs reset
+.outputs out
+.names n1
+.names clock n4
+0 1
+.loc shift.v 93 out
+.latch d out re n4 4 reset
