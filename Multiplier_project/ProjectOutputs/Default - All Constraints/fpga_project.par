@@ -1,0 +1,467 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+CIT114PC02::  Fri Sep 02 18:58:40 2022
+
+par -w -t 1 fpga_project_map.ncd fpga_project.ncd
+"C:\Users\Administrator\Desktop\arquitectura_Angel\FPGA_Project\ProjectOutputs\D
+efault - All Constraints\FPGA_Project_map.pcf" 
+
+
+Constraints file: C:\Users\Administrator\Desktop\arquitectura_Angel\FPGA_Project\ProjectOutputs\Default - All
+Constraints\FPGA_Project_map.pcf.
+Loading device for application Rf_Device from file '3s1400a.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "FPGA_Project" is an NCD, version 3.2, device xc3s1400an, package fgg676, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.42 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                           5 out of 502     1%
+
+   Number of External Input IOBs                  4
+
+      Number of External Input IBUFs              4
+        Number of LOCed External Input IBUFs      4 out of 4     100%
+
+
+   Number of External Output IOBs                 1
+
+      Number of External Output IOBs              1
+        Number of LOCed External Output IOBs      1 out of 1     100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of Slices                        417 out of 11264   3%
+      Number of SLICEMs                      0 out of 5632    0%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
+
+WARNING:Par:288 - The signal U2/TDO_ENABLE has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_11 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_10 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_13 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_12 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_21 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_20 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_15 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_14 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_23 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_22 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_31 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_30 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_17 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_16 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_25 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_24 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_33 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_32 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_19 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_18 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_27 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_26 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_35 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_34 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_29 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_28 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_36 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/TAP1/reset has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_1 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_0 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_3 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_2 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_5 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_4 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_7 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_6 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_9 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_8 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_1 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_0 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_3 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_2 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_5 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_4 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_7 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_6 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_9 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Value/regout_8 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_1 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_0 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_3 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_2 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_5 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_4 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_7 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_6 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_9 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_8 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/TAP1/exit1dr has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_1 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_0 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_3 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_2 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_5 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_4 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_7 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_6 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_9 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_8 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_11 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_10 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_13 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_12 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_21 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_20 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_15 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_14 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_23 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_22 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_31 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_30 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_17 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_16 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_25 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_24 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_19 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_18 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_27 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_26 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_29 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterConfiguration/regout_28 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_11 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_10 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_13 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_12 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_15 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterOutput_Length/regout_14 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_11 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_10 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_13 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_12 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_15 has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal U1/RegisterInput_Length/regout_14 has no load.  PAR will not attempt to route this signal.
+
+Starting Placer
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:bbe50f10) REAL time: 4 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:bbe50f10) REAL time: 4 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:bbe50f10) REAL time: 4 secs 
+
+WARNING:Place:414 - The input design contains local clock signal(s). To get a better result, we recommend users run map
+   with the "-timing" option set before starting the placement.
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:49191bc0) REAL time: 5 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:49191bc0) REAL time: 5 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:49191bc0) REAL time: 5 secs 
+
+Phase 7.8  Global Placement
+.........................
+..............................
+............................................
+........................................................
+.............................................................................
+Phase 7.8  Global Placement (Checksum:19f9ea0e) REAL time: 5 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:19f9ea0e) REAL time: 5 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:b41a1bd5) REAL time: 6 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:b41a1bd5) REAL time: 6 secs 
+
+Total REAL time to Placer completion: 6 secs 
+Total CPU  time to Placer completion: 3 secs 
+Writing design to file fpga_project.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 2504 unrouted;      REAL time: 10 secs 
+
+Phase  2  : 2170 unrouted;      REAL time: 10 secs 
+
+Phase  3  : 354 unrouted;      REAL time: 11 secs 
+
+Phase  4  : 424 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Updating file: fpga_project.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 12 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+
+Updating file: fpga_project.ncd with current fully routed design.
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c9 may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:CLK_BRD_ibuf may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c1 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c4 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c5 may have excessive skew because 
+      2 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c3 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c7 may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c8 may have excessive skew because 
+      0 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c6 may have excessive skew because 
+      0 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c10 may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c0 may have excessive skew because 
+      2 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/clk_div_c2 may have excessive skew because 
+      0 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/divisor_9_0_component_c8/u1_s may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:U2/U_FREQ/divisor_25_0_component_c9/u1_s may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:PinSignal_U_multiplier_count_0 may have excessive skew because 
+      1 CLK pins and 4 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:PinSignal_U_multiplier_count_1 may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:PinSignal_U_multiplier_count_2 may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:PinSignal_U_multiplier_count_3 may have excessive skew because 
+      1 CLK pins and 3 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 16 secs 
+Total CPU time to Router completion: 14 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|                n14s |  BUFGMUX_X1Y1| No   |  272 |  0.189     |  1.174      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c9 |              |      |      |            |             |
+|                     |         Local|      |   19 |  0.122     |  1.810      |
++---------------------+--------------+------+------+------------+-------------+
+|        CLK_BRD_ibuf |         Local|      |    5 |  0.000     |  1.648      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c1 |              |      |      |            |             |
+|                     |         Local|      |    5 |  0.000     |  0.798      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c4 |              |      |      |            |             |
+|                     |         Local|      |    5 |  0.008     |  1.714      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c5 |              |      |      |            |             |
+|                     |         Local|      |    5 |  0.077     |  1.280      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c3 |              |      |      |            |             |
+|                     |         Local|      |    5 |  0.000     |  0.835      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c7 |              |      |      |            |             |
+|                     |         Local|      |    6 |  0.000     |  1.724      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c8 |              |      |      |            |             |
+|                     |         Local|      |    6 |  0.000     |  1.760      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c6 |              |      |      |            |             |
+|                     |         Local|      |    5 |  0.003     |  1.728      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c1 |              |      |      |            |             |
+|                   0 |         Local|      |    2 |  0.000     |  0.649      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c0 |              |      |      |            |             |
+|                     |         Local|      |    4 |  0.846     |  1.276      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/clk_div_c2 |              |      |      |            |             |
+|                     |         Local|      |    4 |  0.000     |  0.721      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/divisor_9_ |              |      |      |            |             |
+| 0_component_c8/u1_s |         Local|      |    3 |  0.000     |  1.612      |
++---------------------+--------------+------+------+------------+-------------+
+|U2/U_FREQ/divisor_25 |              |      |      |            |             |
+|_0_component_c9/u1_s |              |      |      |            |             |
+|                     |         Local|      |    3 |  0.000     |  1.151      |
++---------------------+--------------+------+------+------------+-------------+
+|                 n6c |         Local|      |   26 |  0.190     |  2.251      |
++---------------------+--------------+------+------+------------+-------------+
+|PinSignal_U_multipli |              |      |      |            |             |
+|          er_count_0 |         Local|      |    5 |  0.000     |  1.361      |
++---------------------+--------------+------+------+------------+-------------+
+|PinSignal_U_multipli |              |      |      |            |             |
+|          er_count_2 |         Local|      |    4 |  0.000     |  1.571      |
++---------------------+--------------+------+------+------------+-------------+
+|PinSignal_U_multipli |              |      |      |            |             |
+|          er_count_1 |         Local|      |    4 |  0.000     |  1.302      |
++---------------------+--------------+------+------+------------+-------------+
+|PinSignal_U_multipli |              |      |      |            |             |
+|          er_count_3 |         Local|      |    4 |  0.000     |  1.334      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     8.942ns|     N/A|           0
+  U_FREQ/clk_div_c9                         | HOLD        |     1.626ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net n14 | SETUP       |         N/A|     9.747ns|     N/A|           0
+  s                                         | HOLD        |     0.866ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net CLK | SETUP       |         N/A|     1.969ns|     N/A|           0
+  _BRD_ibuf                                 | HOLD        |     1.072ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.801ns|     N/A|           0
+  U_FREQ/clk_div_c1                         | HOLD        |     1.245ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.990ns|     N/A|           0
+  U_FREQ/clk_div_c4                         | HOLD        |     0.905ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     2.022ns|     N/A|           0
+  U_FREQ/clk_div_c5                         | HOLD        |     0.943ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.846ns|     N/A|           0
+  U_FREQ/clk_div_c3                         | HOLD        |     1.197ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.774ns|     N/A|           0
+  U_FREQ/clk_div_c7                         | HOLD        |     0.973ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.834ns|     N/A|           0
+  U_FREQ/clk_div_c8                         | HOLD        |     1.285ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.941ns|     N/A|           0
+  U_FREQ/clk_div_c6                         | HOLD        |     1.090ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.386ns|     N/A|           0
+  U_FREQ/clk_div_c10                        | HOLD        |     0.998ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.602ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     2.772ns|     N/A|           0
+  U_FREQ/clk_div_c0                         | HOLD        |     0.569ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.896ns|     N/A|           0
+  U_FREQ/clk_div_c2                         | HOLD        |     1.233ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.984ns|     N/A|           0
+  U_FREQ/divisor_9_0_component_c8/u1_s      | HOLD        |     1.301ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net U2/ | SETUP       |         N/A|     1.984ns|     N/A|           0
+  U_FREQ/divisor_25_0_component_c9/u1_s     | HOLD        |     1.310ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net n6c | SETUP       |         N/A|    14.972ns|     N/A|           0
+                                            | HOLD        |     1.033ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Pin | SETUP       |         N/A|     1.747ns|     N/A|           0
+  Signal_U_multiplier_count_0               | HOLD        |     1.262ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Pin | SETUP       |         N/A|     1.650ns|     N/A|           0
+  Signal_U_multiplier_count_2               | HOLD        |     1.184ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Pin | SETUP       |         N/A|     1.502ns|     N/A|           0
+  Signal_U_multiplier_count_1               | HOLD        |     1.090ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net Pin | SETUP       |         N/A|     1.881ns|     N/A|           0
+  Signal_U_multiplier_count_3               | HOLD        |     1.369ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 104 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 17 secs 
+Total CPU time to PAR completion: 15 secs 
+
+Peak Memory Usage:  4536 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 125
+Number of info messages: 1
+
+Writing design to file fpga_project.ncd
+
+
+
+PAR done!
