@@ -49,7 +49,7 @@ module Ripple32bit(output [31:0]s, output c, input [31:0]a, input [31:0] b, inpu
 
 endmodule
 
-module resta32bits(input [31:0] a, b, input op, output [31:0] salida);
+module resta32bits(input [31:0] a, b, input op, output [31:0] salida, output cout);
 
        wire [31:0] nb;
        wire [31:0] bin; //entrada b al sumador
@@ -86,8 +86,6 @@ module resta32bits(input [31:0] a, b, input op, output [31:0] salida);
        not (nb[29],b[29]);
        not (nb[30],b[30]);
        not (nb[31],b[31]);
-
-       wire cout;
        
        Ripple32bit add( salida,cout,a,nb,1'b1);
 endmodule

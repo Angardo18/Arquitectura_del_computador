@@ -1,5 +1,32 @@
 `include "mux.v"
+/*
+module testB();
 
+    reg clk,load,r;
+    reg [31:0] in,in2;
+    wire [31:0] out,out2;
+
+    mux mm1(in2[31],out[31],load,shiftIn);
+
+    shiftRegister_32b1 a({in[30:0],1'b1},1'b0,load,clk,r,out);
+    shiftRegister_32b a1({in2[30:0],shiftIn},shiftIn,load,clk,r,out2);
+    always
+        #5 clk = ~clk;
+
+    initial begin
+        clk=0;r=1;in=1;load=1;in2=2;in[30]=1;
+        #1 r=0;
+        #12 load=0;
+        $monitor("%b %b",out2,out);
+        #100  in = 3; load=1;
+        #10 load=0;
+        #100 $finish;
+
+    end
+
+
+endmodule
+*/
 module dFlipFlop(input d, clk, reset, output reg out);
 
     always@(negedge clk, posedge reset) begin
@@ -8,7 +35,6 @@ module dFlipFlop(input d, clk, reset, output reg out);
     end
 
 endmodule
-
 module shiftRegister_32b(input [31:0] value, input in, load, clk,r,output [0:31] Q);
     wire [31:0]d;
     wire q0;
@@ -82,7 +108,6 @@ module shiftRegister_32b(input [31:0] value, input in, load, clk,r,output [0:31]
     dFlipFlop ff1(d[30],clk,r,Q[30]);
     dFlipFlop ff0(d[31],clk,r,Q[31]);
 endmodule
-
 module shiftRegister_32b1(input [31:0] value, input in, load, clk,r,output [0:31] Q);
     wire [31:0]d;
     
@@ -155,7 +180,6 @@ module shiftRegister_32b1(input [31:0] value, input in, load, clk,r,output [0:31
     dFlipFlop ffd1(d[30],clk,r,Q[30]);
     dFlipFlop ffd0(d[31],clk,r,Q[31]);
 endmodule
-
 module register_32b(input [31:0] value, input clk,r,output [31:0] Q);
     
     dFlipFlop fb0(value[0],clk,r,Q[0]);
