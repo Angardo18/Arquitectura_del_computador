@@ -36,7 +36,7 @@ module sumador_fp(input[31:0]A,input[31:0]B,output[31:0]Resultado);
             MB2={2'b00,1'b1,MB};
             SR=SA;
         end
-        /*si el exponente de A es menor al de B, al exponente de la diferencia le hago
+        /*Si el exponente de A es menor al de B, al exponente de la diferencia le hago
         una NOT y le sumo 1
         con lo que la mantisas de A tiene que ser igual a un corrimiento de un bit a la derecha
         para que sea mayo al de la diferencia
@@ -150,18 +150,18 @@ module sumador_fp(input[31:0]A,input[31:0]B,output[31:0]Resultado);
     end
 endmodule
 //WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-module test();
+// module test();
 
-    reg [31:0] a,b;
-    wire [31:0] result;
-    sumador_fp try (a,b,result);    
-    initial begin
+//     reg [31:0] a,b;
+//     wire [31:0] result;
+//     sumador_fp try (a,b,result);    
+//     initial begin
 
-        a=32'b11000111010000001110100001011000;
-        b=32'b11000111111010110111000010010100;
+//         a=32'b11000111010000001110100001011000;
+//         b=32'b11000111111010110111000010010100;
           
-        $display("a     |  b  |   result ");
-        $display("------------------------");
-        $monitor("%b | %b | %b", a,b,result);
-    end
-endmodule
+//         $display("a     |  b  |   result ");
+//         $display("------------------------");
+//         $monitor("%b | %b | %b", a,b,result);
+//     end
+// endmodule
